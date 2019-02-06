@@ -8,28 +8,28 @@ public class Main {
 
 
     public static void main(String[] args) {
-        int tidssteg;
-        float gjennomsnittLanding;
-        float gjennomsnittAvta;
+        float tidssteg;
+        double gjennomsnittLanding;
+        double gjennomsnittAvta;
 
         Scanner scanner = new Scanner(System.in);
 
 
         // leser inn verdier fra brukerinput
         System.out.print("Hvor mange tidssteg skal gjennomføres?: ");
-        tidssteg = scanner.nextInt();
+        tidssteg = scanner.nextFloat();
 
         System.out.print("Hvor mange gjennomsnittlige landinger?: ");
-        gjennomsnittLanding = scanner.nextFloat();
+        gjennomsnittLanding = scanner.nextDouble();
 
         System.out.print("Hvor mange gjennomsnittlige avganger?: ");
-        gjennomsnittAvta = scanner.nextFloat();
+        gjennomsnittAvta = scanner.nextDouble();
 
         simuler(tidssteg,gjennomsnittLanding,gjennomsnittAvta);
 
     }
 
-    private static void simuler(int tidssteg, float gjennomsnittLanding, float gjennomsnittAvta) {
+    private static void simuler(float tidssteg, double gjennomsnittLanding, double gjennomsnittAvta) {
         //Initier begge køene til å være tommE
         LinkedList<Fly> avgangskø = new LinkedList<>();
         LinkedList<Fly> landingskø = new LinkedList<>();
@@ -43,7 +43,6 @@ public class Main {
         int avgangsKlar = 0;
         int totalVentetid = 0;
 
-
         //For hver tidssteg i simuleringen
         for (int i = 1; i <= tidssteg; i++ ){
 
@@ -52,7 +51,7 @@ public class Main {
             System.out.println("Tidssteg " + i + ": ");
 
             //For hvert nytt fly som kommer for å lande
-            for (int j = 0; j <= antallLandinger; j++){
+            for (int j = 0; j < antallLandinger; j++){
 
                 //Hvis landingskøen er full
                 //Avvis det nye flyet (henvis til annen flyplass)
@@ -75,7 +74,7 @@ public class Main {
             int antallAvganger = getPoissonRandom(gjennomsnittAvta);
 
             //For hvert nytt fly som kommer for å ta av
-            for (int k = 0; k <= antallAvganger; k++){
+            for (int k = 0; k < antallAvganger; k++){
 
                 //Hvis avgangskøen er full
                 //Avvis det nye flyet (avgang må prøves senere)
@@ -96,8 +95,6 @@ public class Main {
 
             }
 
-
-
             //Hvis landingskøen ikke er tom
             //Ta ut første fly i landingskøen og la det få lande
             if (landingskø.size() != 0){
@@ -111,8 +108,8 @@ public class Main {
             //ellers hvis avgangskøen ikke er tom
             //Ta ut første fly i avgangskøen og la det få ta av
             else if (avgangskø.size() != 0){
-                System.out.println("Fly " + avgangskø.getFirst().getId() + " tar av:");
-                totalVentetid += (i - landingskø.getFirst().getInngangSteg());
+                System.out.println("Fly " + avgangskø.getFirst().getId() + " tar av.");
+                totalVentetid += (i - avgangskø.getFirst().getInngangSteg());
                 avgangskø.removeFirst();
                 avganger++;
             }
@@ -123,23 +120,17 @@ public class Main {
                 System.out.println("Flyplassen er tom for fly.");
             }
 
-
-
-
-
-
         }
 
         //Skriv til slutt ut resultater som gj.snittlig ventetid etc.
         samletInfo(flyteller, landinger, avganger, avvist, landingsKlar, avgangsKlar, totalVentetid, tidssteg);
-
 
     }
 
 
 
 
-    public static void samletInfo(int flyteller, int landinger, int avganger, int avvist, int landingsKlar, int avgangsKlar, int totalVentetid, int tidssteg){
+    public static void samletInfo(int flyteller, int landinger, int avganger, int avvist, int landingsKlar, int avgangsKlar, float totalVentetid, float tidssteg){
         float gjennomsnittligVentetid = totalVentetid/tidssteg;
         System.out.println("\n Generell informasjon etter simulering: \n" +
                 "Total antall fly i systemet: " + flyteller + "\n" +
