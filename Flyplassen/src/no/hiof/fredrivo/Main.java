@@ -131,7 +131,7 @@ public class Main {
 
 
     public static void samletInfo(int flyteller, int landinger, int avganger, int avvist, int landingsKlar, int avgangsKlar, float totalVentetid, float tidssteg){
-        float gjennomsnittligVentetid = totalVentetid/tidssteg;
+        float prosentligligVentetid = (totalVentetid/tidssteg)*100;
         System.out.println("\n Generell informasjon etter simulering: \n" +
                 "Total antall fly i systemet: " + flyteller + "\n" +
                 "Total antall landinger: " + landinger + "\n" +
@@ -139,7 +139,7 @@ public class Main {
                 "Antall avviste fly: " + avvist + "\n" +
                 "Antall fly klare til landing: " + landingsKlar + "\n" +
                 "Antall fly klare til avgang: " + avgangsKlar + "\n" +
-                "Gjennomsnittlig ventetid: " + gjennomsnittligVentetid);
+                "Prosentlig ventetid: " + prosentligligVentetid);
 
     }
 
