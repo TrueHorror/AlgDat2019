@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73cf6a43-4794-439e-a452-415fc9ca9a75" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
+      <change beforePath="$PROJECT_DIR$/out/production/Flyplassen/no/hiof/fredrivo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Flyplassen/no/hiof/fredrivo/Main.class" afterDir="false" />
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/src/no/hiof/fredrivo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hiof/fredrivo/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,8 +24,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/fredrivo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="1788">
               <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
+=======
+<<<<<<< Updated upstream
+            <state relative-caret-position="97">
+              <caret line="132" column="19" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
+=======
+            <state relative-caret-position="255">
+              <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -28,8 +46,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/fredrivo/Fly.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="51">
               <caret line="3" selection-start-line="3" selection-end-line="3" />
+=======
+            <state relative-caret-position="238">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+              <folding>
+                <element signature="e#325#326#0" expanded="true" />
+              </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -56,9 +82,16 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< Updated upstream
     <option name="x" value="950" />
     <option name="width" value="978" />
     <option name="height" value="1040" />
+=======
+    <option name="x" value="477" />
+    <option name="y" value="-23" />
+    <option name="width" value="977" />
+    <option name="height" value="1039" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -66,7 +99,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< Updated upstream
       <pane id="Scope" />
+=======
+>>>>>>> Stashed changes
       <pane id="ProjectPane" />
       <pane id="PackagesPane">
         <subPane>
@@ -84,16 +120,22 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< Updated upstream
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549403177331" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../OOP/oblig3/oblig2" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549403232713" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> Stashed changes
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -137,17 +179,37 @@
       <workItem from="1548767512507" duration="3111000" />
       <workItem from="1548859130009" duration="506000" />
       <workItem from="1549362440330" duration="2738000" />
-      <workItem from="1549394351719" duration="8438000" />
+      <workItem from="1549394351719" duration="8652000" />
+      <workItem from="1549654417890" duration="811000" />
+      <workItem from="1549660043586" duration="600000" />
+      <workItem from="1549723823976" duration="90000" />
+      <workItem from="1549724704064" duration="2322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="19142000" />
+=======
+<<<<<<< Updated upstream
+    <option name="totallyTimeSpent" value="17567000" />
+=======
+    <option name="totallyTimeSpent" value="18830000" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
+<<<<<<< Updated upstream
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.068456374" />
+=======
+<<<<<<< Updated upstream
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.068456374" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07196162" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -156,6 +218,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
@@ -167,6 +230,20 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Duplicate detector" order="12" weight="0.32936078" />
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29252437" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.32936078" />
+>>>>>>> Stashed changes
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -186,15 +263,33 @@
     <entry file="file://$PROJECT_DIR$/src/no/hiof/fredrivo/QueueADT.java" />
     <entry file="file://$PROJECT_DIR$/src/no/hiof/fredrivo/Fly.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="51">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
+=======
+        <state relative-caret-position="238">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding>
+            <element signature="e#325#326#0" expanded="true" />
+          </folding>
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/fredrivo/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="1788">
           <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
+=======
+<<<<<<< Updated upstream
+        <state relative-caret-position="97">
+          <caret line="132" column="19" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
+=======
+        <state relative-caret-position="255">
+          <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
