@@ -11,6 +11,8 @@ public class Main {
         // Størrelse på sjakkbrettet
         private static int n;
         private static int brett[][];
+        private static int antallFlytt = 0;
+        private static int besøkteRuter[][];
 
         public static boolean finnVei(int i, int j)
         {
@@ -19,70 +21,105 @@ public class Main {
             //
             // Returnerer true hvis vi fant en slik vei, false ellers
 
-            // Bunn i rekursjonen: Ferdig hvis vi er i nedre hÃ¸yre hjÃ¸rne
-            if (i == n-1 && j == n-1)
-            // SPRINGERPROBLEMET mÃ¥ her ha et annet stoppkriterium
-            {
-                // Markerer at siste rute i labyrinten ligger pÃ¥ veien som
-                // er funnet, og returnerer true
+            // Bunn i rekursjonen: Ferdig hvis springeren har besøkt alle ruter.
+            if (antallFlytt == n*n-1){
                 brett[i][j] = VEI;
+                besøkteRuter[i][j] = ++antallFlytt;
                 return true;
             }
 
-            // Markerer at rute (i,j) nÃ¥ er oppsÃ¸kt
+            // Markerer at rute (i,j) nå er oppsøkt
             brett[i][j] = BRUKT;
-            // I SPRINGERPROBLEMET mÃ¥ vi her i tillegg lagre bÃ¥de antall
-            // flytt som er gjort frem til nÃ¥, og hvike flytt som er gjort
-            // for Ã¥ komme hit.
+            besøkteRuter[i][j] = ++antallFlytt;
+            // I SPRINGERPROBLEMET må vi her i tillegg lagre både antall
+            // flytt som er gjort frem til nå, og hvike flytt som er gjort
+            // for å komme hit.
 
-            // PrÃ¸ver alle fire mulige lovlige veier videre fra rute(i,j):
-            // HÃ˜YRE, NED, VENSTRE, OPP
 
-            // For Ã¥ lÃ¸se SPRINGERPROBLEMET, mÃ¥ koden her utvides til Ã¥
-            // hÃ¥ndtere alle de Ã¥tte mulige lovlige stegene som en
+            // For å løse SPRINGERPROBLEMET, må koden her utvides til å
+            // håndtere alle de åtte mulige lovlige stegene som en
             // springer kan ta fra rute (i,j)
 
-            // HÃ˜YRE
-            // Sjekker om det er lovlig Ã¥ gÃ¥ til hÃ¸yre
-            if (j < n-1 && brett[i][j+1] == FRI)
+            // OPP OG VENSTRE
+            if (i > 1 && j > 0 && brett[i-2][j-1] == FRI)
             {
-                // PrÃ¸ver Ã¥ finne vei videre rekursivt fra hÃ¸yre naborute
-                if (finnVei(i,j+1))
+                // Prøver å finne vei videre rekursivt fra høyre naborute
+                if (finnVei(i-2,j-1))
                 {
                     // Her vet vi at det ble funnet en vei gjennom
                     // labyrinten fra rute (i,j). Merker av at (i,j)
-                    // ligger pÃ¥ denne veien og stopper deretter videre
-                    // leting etter vei ved Ã¥ returnere true
+                    // ligger på denne veien og stopper deretter videre
+                    // leting etter vei ved å returnere true
 
                     brett[i][j] = VEI;
                     return true;
                 }
             }
 
-            // NED
-            if (i < n-1 && brett[i+1][j] == FRI)
+            // OPP OG HØYRE
+            if (i > 1 && j < n-1 && brett[i-2][j+1] == FRI)
             {
-                if (finnVei(i+1,j))
+                if (finnVei(i-2,j+1))
                 {
                     brett[i][j] = VEI;
                     return true;
                 }
             }
 
-            // VENSTRE
-            if (j > 0 && brett[i][j-1] == FRI)
+            // HØYRE OG OPP
+            if (i > 0 && j < n-2 && brett[i-1][j+2] == FRI)
             {
-                if (finnVei(i,j-1))
+                if (finnVei(i-1,j+2))
                 {
                     brett[i][j] = VEI;
                     return true;
                 }
             }
 
-            // OPP
-            if (i > 0 && brett[i-1][j] == FRI)
+            // HØYRE OG NED
+            if (i < n-1 && j < n-2 && brett[i+1][j+2] == FRI)
             {
-                if (finnVei(i-1,j))
+                if (finnVei(i+1,j+2))
+                {
+                    brett[i][j] = VEI;
+                    return true;
+                }
+            }
+
+            // NED OG HØYRE
+            if (i < n-2 && j < n-1 && brett[i+2][j+1] == FRI)
+            {
+                if (finnVei(i+2,j+1))
+                {
+                    brett[i][j] = VEI;
+                    return true;
+                }
+            }
+
+            // NED OG VENSTRE
+            if (i < n-2 && j > 0 && brett[i+2][j-1] == FRI)
+            {
+                if (finnVei(i+2,j-1))
+                {
+                    brett[i][j] = VEI;
+                    return true;
+                }
+            }
+
+            // VENSTRE OG NED
+            if (i < n-1 && j > 1 && brett[i+1][j-2] == FRI)
+            {
+                if (finnVei(i+1,j-2))
+                {
+                    brett[i][j] = VEI;
+                    return true;
+                }
+            }
+
+            // VENSTRE OG OPP
+            if (i > 0 && j > 1 && brett[i-1][j-2] == FRI)
+            {
+                if (finnVei(i-1,j-2))
                 {
                     brett[i][j] = VEI;
                     return true;
@@ -114,31 +151,41 @@ public class Main {
             System.out.print("størrelse på sjakkbrettet?: ");
             n = scanner.nextInt();
 
+            System.out.println("Hvor skal springeren begynne på ett brett som er " + n + " x " + n + "?");
+            System.out.println("x?:");
+            int startX = scanner.nextInt();
+            System.out.println("y?:");
+            int startY = scanner.nextInt();
+
             // Oppretter 2D-tabell som lagrer sjakkbrettet
             brett = new int[n][n];
+            besøkteRuter = new int[n][n];
 
+            //setter alle ruter fri
+            for (int i = 0; i<n; i++){
+                for (int j = 0; j<n; j++){
+                    brett[i][j] = FRI;
+                }
+            }
 
             // Leter etter vei fra øvre venstre hjørne
 
-            boolean funnetVei = finnVei(0, 0);
+            boolean funnetVei = finnVei(startX, startY);
 
-            // Skriver ut labyrinten (og evt. funnet vei)
+            // Skriver ut sjakkbrett
             System.out.println();
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < n; j++)
                 {
-                    if (brett[i][j] == VEI)
-                        System.out.print('*');
-                    else
-                        System.out.print(brett[i][j]);
+                        System.out.print(besøkteRuter[i][j] + "\t");
                 }
-                System.out.println("");
+                System.out.println();
             }
 
-            System.out.println("");
+            System.out.println();
             if (!funnetVei)
-                System.out.println("Fant ingen vei gjennom labyrinten");
+                System.out.println("Ikke mulig for springeren å besøke alle ruter ved satt startposisjon og/eller brettstørrelse.");
 
         }
 

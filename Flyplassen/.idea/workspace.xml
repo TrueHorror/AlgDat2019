@@ -188,6 +188,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="19399000" />
 <<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="19142000" />
 =======
@@ -253,7 +254,7 @@
       <window_info anchor="right" id="Maven" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info active="true" anchor="right" id="Run" order="9" visible="true" weight="0.26979867" />
+      <window_info anchor="right" id="Run" order="9" weight="0.26979867" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
