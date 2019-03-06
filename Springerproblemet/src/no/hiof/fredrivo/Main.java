@@ -1,6 +1,5 @@
 package no.hiof.fredrivo;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -125,6 +124,7 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
 
             // Leser størrelsen på brettet
+            // Ved n > 6 går det veldig sakte grunnet finnVei metoden kjører brute-force.
             System.out.print("størrelse på sjakkbrettet?: ");
             n = scanner.nextInt();
 
@@ -152,7 +152,7 @@ public class Main {
 
             // Skriver ut sjakkbrett
             System.out.println();
-            skrivUtBrukteRuter();
+            skrivUtBesøkteRuter();
 
             System.out.println();
             if (!funnetVei)
@@ -160,7 +160,7 @@ public class Main {
 
         }
 
-        private static void skrivUtBrukteRuter(){
+        private static void skrivUtBesøkteRuter(){
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < n; j++)
