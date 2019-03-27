@@ -25,6 +25,7 @@ public class Main {
                     tree.insert(input.sval.replace(".", ""));
                 x = input.nextToken ();
             }
+            //finn på en finurlig måte å skrive ut treet.
             System.out.println(tree);
         }
         catch (IOException e) {
