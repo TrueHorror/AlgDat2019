@@ -38,7 +38,7 @@ public class Node {
         return teller;
     }
 
-    public String getWordAndAmount() {
+    public String write() {
         return word + ": " + teller;
     }
 

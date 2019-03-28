@@ -45,5 +45,17 @@ public class BinaryTree {
 
     }
 
+    public void printInOrder(){
+        printInOrder(root);
+    }
+
+    private void printInOrder(Node node){
+        if (node != null){
+            printInOrder(node.getLeft());
+            System.out.println(node.write());
+            printInOrder(node.getRight());
+        }
+    }
+
 
 }

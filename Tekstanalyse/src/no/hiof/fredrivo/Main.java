@@ -11,36 +11,25 @@ public class Main {
     public static void main(String[] args) {
         try {
             r = new BufferedReader(new FileReader("churchill.txt"));
+            String line = null;
+            while((line = r.readLine()) != null){
+                String[] words = line.toUpperCase().replaceAll("[^A-Z ]", "").split(" ");
+                for (String word: words){
+                    tree.insert(word);
+                }
+
+            }
+            tree.printInOrder();
         }
         catch (FileNotFoundException e){
             System.out.println("Oops: " + e);
         }
-
-        try {
-            StreamTokenizer input = new StreamTokenizer(r);
-            int x = input.nextToken();
-            while (x != input.TT_EOF)
-            {
-                if (input.ttype == input.TT_WORD)
-                    tree.insert(input.sval.replace(".", ""));
-                x = input.nextToken ();
-            }
-            //finn på en finurlig måte å skrive ut treet.
-            printTree(BinaryTree.getRoot());
-        }
         catch (IOException e) {
-            System.out.println("Something went oopsie: " + e);
-
+            e.printStackTrace();
         }
 
     }
 
-    public static void printTree(Node node){
-        if (node != null){
-            printTree(node.getLeft());
-            System.out.println(node.getWordAndAmount());
-            printTree(node.getRight());
-        }
-    }
+
 
 }
