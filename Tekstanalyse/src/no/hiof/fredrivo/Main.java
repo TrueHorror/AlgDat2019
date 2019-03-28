@@ -26,13 +26,21 @@ public class Main {
                 x = input.nextToken ();
             }
             //finn på en finurlig måte å skrive ut treet.
-            System.out.println(tree);
+            printTree(BinaryTree.getRoot());
         }
         catch (IOException e) {
             System.out.println("Something went oopsie: " + e);
 
         }
 
+    }
+
+    public static void printTree(Node node){
+        if (node != null){
+            printTree(node.getLeft());
+            System.out.println(node.getWordAndAmount());
+            printTree(node.getRight());
+        }
     }
 
 }

@@ -6,6 +6,10 @@ public class Node {
     private int teller = 0;
     private String word;
 
+    public String getWord() {
+        return word;
+    }
+
     public void setLeft(Node left) {
         this.left = left;
     }
@@ -34,8 +38,8 @@ public class Node {
         return teller;
     }
 
-    public String getWord() {
-        return word;
+    public String getWordAndAmount() {
+        return word + ": " + teller;
     }
 
     public Node(String word) {

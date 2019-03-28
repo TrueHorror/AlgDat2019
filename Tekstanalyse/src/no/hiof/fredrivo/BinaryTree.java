@@ -1,7 +1,11 @@
 package no.hiof.fredrivo;
 
 public class BinaryTree {
-    private Node root;
+    private static Node root;
+
+    public static Node getRoot() {
+        return root;
+    }
 
     public void insert(String word) {
         if (root == null){
