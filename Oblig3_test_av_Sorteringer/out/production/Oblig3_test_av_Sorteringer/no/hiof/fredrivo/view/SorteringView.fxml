@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="400.0" maxWidth="680.0" minHeight="400.0" minWidth="680.0" prefHeight="400.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.hiof.fredrivo.controller.SorteringController">
+   <children>
+      <TextArea fx:id="usortertVisningArea" layoutX="35.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="30.0" />
+      <TextArea fx:id="sortertVisningTextArea" layoutX="429.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.rightAnchor="30.0" />
+      <TextField fx:id="antallTallaaSortereTextField" layoutX="314.0" layoutY="116.0" prefHeight="25.0" prefWidth="52.0" />
+      <Button fx:id="radixsortBtn" layoutX="307.0" layoutY="254.0" mnemonicParsing="false" text="Radixsort" />
+      <Button fx:id="insertionSortBtn" layoutX="296.0" layoutY="150.0" mnemonicParsing="false" text="Insertion Sort" />
+      <Button fx:id="quicksortBtn" layoutX="307.0" layoutY="188.0" mnemonicParsing="false" text="Quicksort" />
+      <Button fx:id="mergeSortBtn" layoutX="302.0" layoutY="223.0" mnemonicParsing="false" text="Merge Sort" />
+      <Label fx:id="sortertVisningLabel" layoutX="487.0" layoutY="64.0" prefHeight="28.0" prefWidth="127.0" text="Sortert visning">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="usortertVisningLabel" layoutX="64.0" layoutY="64.0" text="Usortert visning">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="antallTallaaSortereLabel" layoutX="274.0" layoutY="80.0" text="Antall tall å sortere">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Text fx:id="timerText" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 ms" textAlignment="CENTER" wrappingWidth="680.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="tidtagerLabel" alignment="CENTER" layoutX="314.0" layoutY="288.0" prefHeight="24.0" prefWidth="52.0" text="Tidtager:" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="konstantLabel" alignment="CENTER" layoutX="303.0" layoutY="336.0" prefHeight="24.0" prefWidth="76.0" text="Konstant:" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Text fx:id="konstantText" layoutX="1.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="680.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
