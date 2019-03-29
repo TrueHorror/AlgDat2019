@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c3a58b5-0e13-4d28-8300-65774fe5fef2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Springerproblemet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Springerproblemet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oblig3_test_av_Sorteringer/no/hiof/fredrivo/view/SorteringView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Oblig3_test_av_Sorteringer/no/hiof/fredrivo/view/SorteringView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/no/hiof/fredrivo/view/SorteringView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hiof/fredrivo/view/SorteringView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tekstanalyse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tekstanalyse/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tekstanalyse/out/production/Tekstanalyse/no/hiof/fredrivo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tekstanalyse/out/production/Tekstanalyse/no/hiof/fredrivo/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tekstanalyse/out/production/Tekstanalyse/no/hiof/fredrivo/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tekstanalyse/out/production/Tekstanalyse/no/hiof/fredrivo/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tekstanalyse/src/no/hiof/fredrivo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tekstanalyse/src/no/hiof/fredrivo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tekstanalyse/src/no/hiof/fredrivo/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tekstanalyse/src/no/hiof/fredrivo/Node.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +23,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/fredrivo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="1">
               <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -28,12 +35,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/fredrivo/controller/SorteringController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-103">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="142">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5725#5726#0" expanded="true" />
-                <element signature="e#5769#5770#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,8 +47,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/fredrivo/model/Sorteringer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="90" selection-end-column="5" />
+            <state relative-caret-position="-1238">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,12 +58,12 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/no/hiof/fredrivo/view/SorteringView.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state relative-caret-position="731">
               <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
             </state>
           </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -99,7 +104,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -143,13 +147,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553281607548" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553869542504" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -197,13 +202,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26498000" />
+    <option name="totallyTimeSpent" value="27078000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2590604" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -212,7 +217,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -240,31 +245,19 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/no/hiof/fredrivo/controller/SequentialSorting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-568">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hiof/fredrivo/model/FunksjonsMetoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hiof/fredrivo/controller/SequentialSorting.java" />
+    <entry file="file://$PROJECT_DIR$/src/no/hiof/fredrivo/model/FunksjonsMetoder.java" />
     <entry file="file://$PROJECT_DIR$/src/no/hiof/fredrivo/view/SorteringView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="731">
           <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/fredrivo/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="1">
           <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -274,20 +267,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/fredrivo/controller/SorteringController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-103">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="142">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5725#5726#0" expanded="true" />
-            <element signature="e#5769#5770#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/no/hiof/fredrivo/model/Sorteringer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="90" selection-end-column="5" />
+        <state relative-caret-position="-1238">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

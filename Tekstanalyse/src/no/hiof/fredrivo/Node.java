@@ -3,7 +3,7 @@ package no.hiof.fredrivo;
 public class Node {
     private Node left;
     private Node right;
-    private int teller = 0;
+    private int counter = 0;
     private String word;
 
     public String getWord() {
@@ -18,8 +18,8 @@ public class Node {
         this.right = right;
     }
 
-    public void setTeller(int teller) {
-        this.teller = teller;
+    public void setCounter(int counter) {
+        this.counter = counter;
     }
 
     public void setWord(String word) {
@@ -34,22 +34,22 @@ public class Node {
         return right;
     }
 
-    public int getTeller() {
-        return teller;
+    public int getCounter() {
+        return counter;
     }
 
     public String write() {
-        return word + ": " + teller;
+        return word + ": " + counter;
     }
 
     public Node(String word) {
         this.left = null;
         this.right = null;
-        this.teller = 1;
+        this.counter = 1;
         this.word = word;
     }
 
     public void count(){
-        teller++;
+        counter++;
     }
 }

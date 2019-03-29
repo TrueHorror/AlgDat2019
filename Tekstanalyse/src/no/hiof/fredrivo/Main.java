@@ -13,12 +13,19 @@ public class Main {
             r = new BufferedReader(new FileReader("churchill.txt"));
             String line = null;
             while((line = r.readLine()) != null){
-                String[] words = line.toUpperCase().replaceAll("[^A-Z ]", "").split(" ");
+                //regex sjekker sammensatte bokstaver, men tar bort spesialtegn.
+                //Derfor i texten står det feks. 10,000, da vill den fjerne ","
+                //og heller telle 10 og 000 som to seperate ord
+                String[] words = line.toUpperCase().split("(?U)\\W+");
                 for (String word: words){
-                    tree.insert(word);
+                    if (!word.isEmpty()) {
+                        tree.insert(word);
+                    }
+
                 }
 
             }
+            System.out.println("Første 'ord' er rar.");
             tree.printInOrder();
         }
         catch (FileNotFoundException e){
